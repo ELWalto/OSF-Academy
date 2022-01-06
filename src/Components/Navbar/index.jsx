@@ -1,4 +1,6 @@
 import React from "react";
+
+import { ShoppingCart } from "@material-ui/icons";
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "./style";
 
 const Navbar = () => {
@@ -17,7 +19,9 @@ const Navbar = () => {
         </NavMenu>
         <Bars />
         <NavBtn>
-          <NavBtnLink to="/cart"> Cart</NavBtnLink>
+          <NavBtnLink to="/cart">
+            <ShoppingCart />
+          </NavBtnLink>
         </NavBtn>
       </Nav>
     </>
