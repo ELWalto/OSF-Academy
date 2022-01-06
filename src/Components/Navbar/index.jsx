@@ -15,7 +15,7 @@ const Navbar = () => {
           />
         </NavLink>
         <NavMenu>
-          <input type="text" placeholder="Busque seu produto" />
+          <input type="text" placeholder="Busque seu produto"/>
         </NavMenu>
         <Bars />
         <NavBtn>
