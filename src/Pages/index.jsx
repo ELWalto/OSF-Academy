@@ -1,4 +1,5 @@
 import React from "react";
+import AsideBar from "../Components/AsideBar/AsideBar";
 import Products from "../Components/Products/Products";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
           margin: "30vh",
         }}
       >
+        <AsideBar/>
         <Products />
       </div>
     </>
