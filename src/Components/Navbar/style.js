@@ -17,10 +17,10 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
-  cursor: pointer;
 
   &.active {
     color: #15cdfc;
+    cursor: pointer;
   }
 `;
 
@@ -42,8 +42,10 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
+  /* margin-left: 1rem; */
   input {
-    margin-left: -8rem;
+    align-self: center;
+
     text-align: center;
     display: flex;
     height: 2.3rem;
@@ -53,6 +55,7 @@ export const NavMenu = styled.div`
   }
   @media screen and (max-width: 768px) {
     display: flex;
+    align-self: center;
   }
 `;
 export const NavBtn = styled.nav`

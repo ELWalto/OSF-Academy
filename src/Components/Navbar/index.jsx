@@ -1,7 +1,8 @@
 import React from "react";
 
 import { ShoppingCart } from "@material-ui/icons";
-import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "./style";
+import { Nav, NavLink, Bars, NavBtn, NavBtnLink } from "./style";
+import SearchBar from "../SearchBar";
 
 const Navbar = () => {
   return (
@@ -14,9 +15,7 @@ const Navbar = () => {
             alt="w-commerce logo's"
           />
         </NavLink>
-        <NavMenu>
-          <input type="text" placeholder="Busque seu produto"/>
-        </NavMenu>
+        <SearchBar />
         <Bars />
         <NavBtn>
           <NavBtnLink to="/cart">
