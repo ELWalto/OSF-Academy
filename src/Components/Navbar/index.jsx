@@ -2,7 +2,7 @@ import React from "react";
 
 import { ShoppingCart } from "@material-ui/icons";
 import { Nav, NavLink, Bars, NavBtn, NavBtnLink } from "./style";
-import SearchBar from "../SearchBar";
+import SearchBar from "../SearchBar/index";
 
 const Navbar = () => {
   return (
