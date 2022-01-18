@@ -1,6 +1,7 @@
 import React from "react";
+import SearchBar from "../Components/SearchBar";
 import AsideBar from "../Components/AsideBar/AsideBar";
-import Products from "../Components/Products/Products";
+// import Products from "../Components/Products/Products";
 
 const Home = () => {
   return (
@@ -10,12 +11,10 @@ const Home = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "80vh",
+          height: "60vh",
           margin: "30vh",
         }}
       >
-        <AsideBar/>
-        <Products />
       </div>
     </>
   );

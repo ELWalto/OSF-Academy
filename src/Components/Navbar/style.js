@@ -5,9 +5,11 @@ import { FaBars } from "react-icons/fa";
 export const Nav = styled.nav`
   background: #0379f9;
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
-  z-index: 10;
+  justify-content: space-evenly;
+  padding: 1rem;
+  justify-content: space-evenly;
+  align-content: space-around;
+  
   height: 100px;
 `;
 export const NavLink = styled(Link)`
@@ -42,13 +44,15 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
   /* margin-left: 1rem; */
   input {
+    margin-top: 0%;
     align-self: center;
-
     text-align: center;
     display: flex;
-    height: 2.3rem;
+    height: 2.5rem;
     width: 15rem;
     border-radius: 0.5em;
     border: none;
