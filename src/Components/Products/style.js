@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const ProductCardStyle = styled.div`
-  margin-top: 10vw;
+  margin: 8vw;
   align-items:center ;
   text-align: justify;
-  max-width: fit-content;
+  max-width: max-content;
 
 `;

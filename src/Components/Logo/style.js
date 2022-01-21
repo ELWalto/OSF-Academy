@@ -5,11 +5,9 @@ import { FaBars } from "react-icons/fa";
 export const Nav = styled.nav`
   background: #0379f9;
   display: flex;
-  justify-content: space-evenly;
   padding: 1rem;
   justify-content: space-evenly;
   align-content: space-around;
-  
   height: 100px;
 `;
 export const NavLink = styled(Link)`
@@ -45,11 +43,15 @@ export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-self: center;
+  background-color: #0379f9;
+  padding-bottom: 1em;
 
   /* margin-left: 1rem; */
   input {
     margin-top: 0%;
     align-self: center;
+    justify-content: center;
     text-align: center;
     display: flex;
     height: 2.5rem;
@@ -68,7 +70,7 @@ export const NavBtn = styled.nav`
   margin-right: 24px;
 
   @media screen and (max-width: 768px) {
-    display: none;
+    display: flex;
   }
 `;
 

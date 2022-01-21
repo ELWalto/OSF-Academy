@@ -26,10 +26,12 @@ const Product = ({ product }) => {
           </Typography>
           <Typography variant="h6">$:{product.price}</Typography>
         </div>
+        <div className={classes.description}>
         <Typography variant="h6" color="textPrimary">
           {" "}
           {product.description}
         </Typography>
+        </div>
       </CardContent>
       <CardActions disableSpacing className={classes.cardActions}>
         <IconButton aria-label="Add to cart">
