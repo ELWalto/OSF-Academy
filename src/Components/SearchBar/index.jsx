@@ -16,7 +16,7 @@ const SearchBar = () => {
     if (search) {
       params.name_like = search;
     }
-    axios.get("http://localhost:3333/products", { params }).then((response) => {
+    axios.get("https://my-json-server.typicode.com/ELWalto/dbjson/products", { params }).then((response) => {
       console.log(response);
       setSearchBar(response.data);
     });
