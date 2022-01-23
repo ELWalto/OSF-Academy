@@ -2,10 +2,13 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles(() => ({
   root: {
-    maxWidth: "100vw",
+    maxWidth: "100%",
     marginBottom: "2rem",
     transition: "all 250ms linear",
     scrollbarWidth: "none",
+    width: 2000,
+    // margin:20,
+    // padding: 10,
   },
   media: {
     height: 0,
@@ -27,7 +30,6 @@ export default makeStyles(() => ({
     display: "flex",
     justifyContent: "space-between",
     textAlign: "justify",
-    textOverflow: "hidden",
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",
   },

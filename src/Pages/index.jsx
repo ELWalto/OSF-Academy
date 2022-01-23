@@ -1,5 +1,5 @@
 import React from "react";
-import AsideBar from "../Components/AsideBar/AsideBar";
+import SideBar from "../Components/SideBar/SideBar";
 import SearchBar from "../Components/SearchBar";
 
 const Home = () => {
@@ -12,8 +12,7 @@ const Home = () => {
         }}
       >
         <SearchBar />
-
-        {/* <AsideBar/> */}
+        {/* <SideBar /> */}
       </div>
     </>
   );

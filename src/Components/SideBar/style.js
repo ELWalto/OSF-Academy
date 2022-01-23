@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AsideBarStyle = styled.div`
+export const SideBarStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@ export const AsideBarStyle = styled.div`
     
 `;
 
-export const AsideSectionStyle = styled.section`
+export const SideSectionStyle = styled.section`
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
