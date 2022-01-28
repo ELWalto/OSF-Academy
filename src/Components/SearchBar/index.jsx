@@ -7,33 +7,28 @@ import { NavMenu } from "../Logo/style";
 import Logo from "../Logo/logo";
 import CartIcon from "../CartIcon";
 import SideBar from "../SideBar/SideBar";
+import { useCart } from "../../Contexts/CartContext/CartContext";
 
 const SearchBar = () => {
   const [searchBar, setSearchBar] = useState([]);
   const [search, setSearch] = useState("");
-  const [categories, setCategories] = useState('');
+
+  const cart = useCart();
 
   useEffect(() => {
     const params = {};
     if (search) {
       params.name_like = search;
     }
-    axios.get("https://my-json-server.typicode.com/ELWalto/dbjson/products", { params }).then((response) => {
-      console.log(response);
-      setSearchBar(response.data);
-    });
+    axios
+      .get("https://my-json-server.typicode.com/ELWalto/dbjson/products", {
+        params,
+      })
+      .then((response) => {
+        console.log(response);
+        setSearchBar(response.data);
+      });
   }, [search]);
-
-  useEffect(() => {
-    const genresParams = {};
-    if (categories) {
-      genresParams.name_like = categories;
-    }
-    axios.get("https://my-json-server.typicode.com/ELWalto/dbjson/products", { genresParams }).then((response) => {
-      console.log(response);
-      setCategories(response.data);
-    });
-  }, [categories]);
 
   return (
     <>
@@ -48,11 +43,6 @@ const SearchBar = () => {
         <CartIcon />
       </NavMenu>
 
-
-    <div>
-      <SideBar value={categories} onClick={(e) => setCategories(e.target.value)}>
-      </SideBar>
-    </div>
       <div>
         <ProductCardStyle>
           <Grid container justifyContent="center" spacing={4}>
